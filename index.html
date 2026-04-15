@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coaches' Playbook — Thru-2-32 | Ryde Hunters Hill Hockey Club</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --black:#0D0D0D;
+  --dark:#161616;
+  --card:#1E1E1E;
+  --border:#2E2E2E;
+  --mid:#666;
+  --light:#999;
+  --off-white:#F0EFEB;
+  --white:#FFFFFF;
+  --green:#22C55E;
+  --green-dim:#16A34A;
+  --accent-bg:#0F2318;
+  --display:'Oswald',sans-serif;
+  --body:'Plus Jakarta Sans',sans-serif;
+}
+html{scroll-behavior:auto}
+body{
+  background:var(--black);
+  color:var(--off-white);
+  font-family:var(--body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(13,13,13,0.92);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+  padding:0 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;
+  height:56px;
+  gap:1rem;
+}
+.nav-brand{
+  display:flex;align-items:center;gap:0.75rem;flex-shrink:0;
+}
+.nav-brand img{width:36px;height:36px;border-radius:50%;filter:brightness(0) invert(1);opacity:1}
+.nav-brand-text{
+  font-family:var(--display);
+  font-size:14px;font-weight:500;letter-spacing:0.04em;
+  color:var(--white);white-space:nowrap;
+}
+.nav-links{
+  display:flex;gap:0.25rem;overflow-x:auto;
+  scrollbar-width:none;-ms-overflow-style:none;
+  padding:0.25rem 0;
+}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  font-family:var(--display);font-size:11px;font-weight:400;
+  letter-spacing:0.06em;text-transform:uppercase;
+  color:var(--light);text-decoration:none;
+  padding:0.35rem 0.6rem;border-radius:4px;white-space:nowrap;
+  transition:color 0.15s,background 0.15s;
+}
+.nav-links a:hover{color:var(--green);background:rgba(34,197,94,0.08)}
+.nav-links a.active{color:var(--green)}
+
+/* COVER */
+.cover{
+  min-height:calc(100vh - 56px);
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:3rem 2rem 3.5rem;
+  background:var(--black);
+  border-bottom:1px solid var(--border);
+  position:relative;overflow:hidden;
+}
+.cover::before{
+  content:'';position:absolute;top:0;left:0;right:0;bottom:0;
+  background:
+    repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.025) 40px),
+    repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(255,255,255,0.025) 40px);
+}
+.cover-eyebrow{
+  font-family:var(--display);font-size:11px;font-weight:400;
+  letter-spacing:0.12em;text-transform:uppercase;
+  color:var(--green);margin-bottom:1.5rem;
+  position:relative;
+}
+.cover-title{
+  font-family:var(--display);
+  font-size:clamp(3rem,12vw,7rem);
+  font-weight:700;line-height:0.9;
+  letter-spacing:-0.01em;
+  color:var(--white);
+  margin-bottom:0.5rem;
+  position:relative;
+}
+.cover-subtitle{
+  font-family:var(--display);
+  font-size:clamp(1.5rem,6vw,3.5rem);
+  font-weight:300;letter-spacing:0.02em;
+  color:var(--green);margin-bottom:2rem;
+  position:relative;
+}
+.cover-body{
+  font-size:15px;color:var(--light);
+  max-width:500px;line-height:1.65;
+  position:relative;
+}
+.cover-toc{
+  position:relative;
+  margin-top:3rem;
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:0.5rem;
+}
+.cover-toc a{
+  display:flex;align-items:center;gap:0.5rem;
+  padding:0.6rem 0.75rem;
+  background:var(--card);border:1px solid var(--border);border-radius:6px;
+  text-decoration:none;
+  font-family:var(--display);font-size:12px;font-weight:400;
+  letter-spacing:0.04em;text-transform:uppercase;
+  color:var(--light);
+  transition:border-color 0.15s,color 0.15s;
+}
+.cover-toc a:hover{border-color:var(--green);color:var(--green)}
+.cover-toc .toc-num{color:var(--green);font-weight:600}
+
+/* SECTIONS */
+section{
+  padding:4rem 2rem;
+  border-bottom:1px solid var(--border);
+  max-width:760px;margin:0 auto;
+  width:100%;
+}
+.section-wrap{border-bottom:1px solid var(--border)}
+
+/* SECTION HEADER */
+.section-header{
+  display:flex;align-items:flex-start;gap:1.5rem;
+  margin-bottom:2rem;
+}
+.section-num{
+  font-family:var(--display);
+  font-size:4rem;font-weight:700;line-height:1;
+  color:var(--border);flex-shrink:0;
+  letter-spacing:-0.02em;
+}
+.section-title-wrap{padding-top:0.75rem}
+.section-title{
+  font-family:var(--display);
+  font-size:clamp(1.4rem,4vw,2rem);
+  font-weight:600;line-height:1.1;
+  letter-spacing:0.01em;
+  color:var(--white);margin-bottom:0.25rem;
+}
+.section-sub{
+  font-size:13px;color:var(--mid);font-style:italic;
+}
+
+/* BODY TEXT */
+p.body-text{
+  font-size:15px;color:#C8C7C2;line-height:1.7;
+  margin-bottom:1.25rem;
+}
+
+/* CALLOUT */
+.callout{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:1.25rem 1.5rem;
+  margin:1.5rem 0;
+}
+.callout.accent{
+  background:var(--accent-bg);
+  border-color:rgba(34,197,94,0.25);
+}
+.callout-label{
+  font-family:var(--display);font-size:11px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--green);margin-bottom:0.5rem;
+}
+.callout p{font-size:14px;color:#C8C7C2;line-height:1.65}
+
+/* BELIEFS GRID */
+.beliefs{display:grid;grid-template-columns:repeat(3,1fr);gap:0.75rem;margin:1.5rem 0}
+.belief{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:1.25rem 1rem;
+}
+.belief-word{
+  font-family:var(--display);font-size:1.1rem;font-weight:600;
+  color:var(--green);margin-bottom:0.5rem;
+  letter-spacing:0.04em;
+}
+.belief p{font-size:13px;color:var(--light);line-height:1.55}
+
+/* LEAD */
+.lead{
+  font-family:var(--display);font-size:1rem;font-weight:500;
+  letter-spacing:0.04em;text-transform:uppercase;
+  color:var(--white);margin:1.75rem 0 0.75rem;
+}
+
+/* NUMBERED / BULLET LIST */
+.item-list{list-style:none;display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1.25rem}
+.item-list li{
+  display:flex;gap:0.75rem;align-items:flex-start;
+  font-size:14.5px;color:#C8C7C2;line-height:1.6;
+}
+.item-list li .n{
+  font-family:var(--display);font-size:11px;font-weight:600;
+  color:var(--green);min-width:20px;padding-top:0.2rem;
+  flex-shrink:0;
+}
+.item-list li strong{color:var(--off-white);font-weight:500}
+
+/* CHECKLIST */
+.checklist{list-style:none;display:flex;flex-direction:column;gap:0.35rem}
+.checklist li{
+  display:flex;gap:0.75rem;align-items:flex-start;
+  font-size:14px;color:#C8C7C2;line-height:1.6;padding:0.35rem 0;
+  border-bottom:1px solid var(--border);
+}
+.checklist li:last-child{border-bottom:none}
+.checklist li::before{
+  content:'□';color:var(--green);flex-shrink:0;
+  font-size:13px;padding-top:0.15rem;
+}
+
+/* COACHING POINTS */
+.coaching-point{
+  display:flex;gap:0;margin-bottom:0.5rem;border-radius:8px;overflow:hidden;
+  border:1px solid var(--border);
+}
+.cp-num{
+  background:#222;padding:1rem 1.1rem;
+  font-family:var(--display);font-size:1.6rem;font-weight:700;
+  color:var(--off-white);flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;
+  min-width:52px;
+}
+.cp-text{
+  background:var(--card);padding:0.9rem 1.1rem;
+  font-size:14px;color:#C8C7C2;line-height:1.6;
+  display:flex;align-items:center;
+}
+
+/* MISTAKE / CUE */
+.mistake-cue{
+  display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin:1.25rem 0;
+}
+.mistake,.cue{
+  border-radius:8px;padding:1rem 1.1rem;
+}
+.mistake{background:#1A1010;border:1px solid #3A1E1E}
+.cue{background:#0F1A12;border:1px solid #1E3A22}
+.mc-label{
+  font-family:var(--display);font-size:10px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  margin-bottom:0.4rem;
+}
+.mistake .mc-label{color:#E05050}
+.cue .mc-label{color:var(--green)}
+.mistake p,.cue p{font-size:13px;line-height:1.55}
+.mistake p{color:#D4AAAA}
+.cue p{color:#A8D4B0}
+
+/* SKILL AREAS */
+.skill-areas{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:0.85rem 1.1rem;margin-top:1.25rem;
+}
+.skill-areas .sa-label{
+  font-family:var(--display);font-size:10px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--mid);margin-bottom:0.35rem;
+}
+.skill-areas p{font-size:13px;color:var(--light);line-height:1.6}
+
+/* TERMINOLOGY TABLE */
+.term-group-header{
+  background:#1A1A1A;padding:0.5rem 0.85rem;
+  font-family:var(--display);font-size:11px;font-weight:400;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--mid);margin-top:1rem;
+  border-radius:4px 4px 0 0;
+}
+.term-row{
+  display:flex;gap:0;border-bottom:1px solid var(--border);
+}
+.term-row:last-child{border-bottom:none}
+.term-label{
+  min-width:140px;max-width:140px;
+  padding:0.65rem 0.85rem;
+  font-size:13px;font-weight:500;color:var(--off-white);
+  flex-shrink:0;
+}
+.term-def{
+  padding:0.65rem 0.85rem;
+  font-size:13px;color:var(--light);line-height:1.5;
+  flex:1;
+}
+.term-group{
+  background:var(--card);border:1px solid var(--border);
+  border-radius:8px;overflow:hidden;margin-bottom:0.75rem;
+}
+.term-row:nth-child(even){background:rgba(255,255,255,0.02)}
+
+/* SCENARIO ROWS */
+.scenario{
+  display:grid;grid-template-columns:1fr 1fr;gap:0.5rem;margin-bottom:0.5rem;
+}
+.scenario-sit,.scenario-res{
+  border-radius:8px;padding:1rem 1.1rem;
+}
+.scenario-sit{background:var(--card);border:1px solid var(--border)}
+.scenario-res{background:#0F1A12;border:1px solid #1E3A22}
+.sc-label{
+  font-family:var(--display);font-size:10px;font-weight:500;
+  letter-spacing:0.1em;text-transform:uppercase;
+  margin-bottom:0.4rem;
+}
+.scenario-sit .sc-label{color:var(--mid)}
+.scenario-res .sc-label{color:var(--green)}
+.scenario-sit p,.scenario-res p{font-size:13px;line-height:1.55}
+.scenario-sit p{color:#C8C7C2}
+.scenario-res p{color:#A8D4B0}
+
+/* TIP ROWS */
+.tip{
+  display:flex;gap:1rem;padding:1rem 0;
+  border-bottom:1px solid var(--border);align-items:flex-start;
+}
+.tip:last-child{border-bottom:none}
+.tip-num{
+  font-family:var(--display);font-size:2rem;font-weight:700;
+  color:var(--border);flex-shrink:0;min-width:44px;line-height:1;
+  padding-top:0.1rem;
+}
+.tip-content{}
+.tip-title{font-size:15px;font-weight:500;color:var(--white);margin-bottom:0.2rem}
+.tip-body{font-size:13.5px;color:var(--light);line-height:1.55}
+
+/* TACTICAL PHASE HEADERS */
+.phase-header{
+  display:flex;align-items:baseline;gap:0.75rem;
+  background:var(--card);border-left:3px solid var(--green);
+  padding:0.75rem 1rem;border-radius:0 6px 6px 0;
+  margin:1.5rem 0 0.75rem;
+}
+.phase-tag{
+  font-family:var(--display);font-size:10px;font-weight:400;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--mid);flex-shrink:0;
+}
+.phase-title-text{
+  font-family:var(--display);font-size:1.1rem;font-weight:600;
+  color:var(--white);
+}
+
+/* POSITIONS */
+.positions-grid{display:flex;gap:1.5rem;margin-top:1rem;align-items:flex-start}
+.pitch-img{flex-shrink:0;width:160px}
+.pitch-img img{width:100%;border-radius:8px}
+.pitch-img-cap{font-size:11px;color:var(--mid);text-align:center;margin-top:0.4rem;font-style:italic}
+.pos-list{flex:1}
+.pos-item{padding:0.6rem 0;border-bottom:1px solid var(--border)}
+.pos-item:last-child{border-bottom:none}
+.pos-name{font-size:14px;font-weight:500;color:var(--off-white);margin-bottom:0.15rem}
+.pos-desc{font-size:13px;color:var(--light);line-height:1.5}
+
+/* SESSION TABLE */
+.session-table{border-radius:8px;overflow:hidden;border:1px solid var(--border);margin:1.25rem 0}
+.session-row{display:flex;border-bottom:1px solid var(--border)}
+.session-row:last-child{border-bottom:none}
+.session-time{
+  min-width:72px;padding:0.85rem 0.75rem;
+  font-family:var(--display);font-size:13px;font-weight:600;
+  color:var(--green);flex-shrink:0;background:#111;
+}
+.session-desc{
+  padding:0.85rem 1rem;font-size:14px;color:#C8C7C2;line-height:1.5;
+}
+.session-row:nth-child(even) .session-desc{background:rgba(255,255,255,0.02)}
+.session-row:nth-child(even) .session-time{background:#0E0E0E}
+
+/* RESOURCES */
+.resource-group{margin-bottom:1.75rem}
+
+/* FOOTER */
+footer{
+  background:var(--dark);border-top:1px solid var(--border);
+  padding:2rem;text-align:center;
+}
+footer p{font-family:var(--display);font-size:12px;letter-spacing:0.06em;text-transform:uppercase;color:var(--mid)}
+footer span{color:var(--green)}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  .cover{padding:2rem 1.25rem 2.5rem}
+  section{padding:3rem 1.25rem}
+  .beliefs{grid-template-columns:1fr}
+  .mistake-cue,.scenario{grid-template-columns:1fr}
+  .positions-grid{flex-direction:column}
+  .pitch-img{width:100%;max-width:200px}
+  .nav-brand-text{display:none}
+  .section-num{font-size:2.5rem}
+  .section-title{font-size:1.3rem}
+}
+@media(max-width:400px){
+  .cover-toc{grid-template-columns:1fr 1fr}
+}
+
+/* VIDEO SECTION */
+.video-section { margin-top: 1.5rem; }
+.video-section summary {
+  font-family: var(--display); font-size: 0.95rem; font-weight: 500;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--white); cursor: pointer; padding: 0.75rem 1rem;
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 6px; list-style: none; display: flex;
+  align-items: center; justify-content: space-between;
+  transition: border-color 0.15s;
+}
+.video-section summary::-webkit-details-marker { display: none; }
+.video-section summary:hover { border-color: var(--green); }
+.video-section summary::after { content: '+'; color: var(--green); font-size: 1.2rem; }
+details[open] summary::after { content: '−'; }
+details[open] summary { border-radius: 6px 6px 0 0; border-bottom-color: transparent; }
+.drill-list { 
+  background: var(--card); border: 1px solid var(--border); 
+  border-top: none; border-radius: 0 0 6px 6px;
+  padding: 0.5rem 0;
+}
+.drill-item {
+  display: flex; align-items: center; gap: 0.75rem;
+  padding: 0.55rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.04);
+  text-decoration: none; transition: background 0.1s;
+}
+.drill-item:last-child { border-bottom: none; }
+.drill-item:hover { background: rgba(255,255,255,0.04); }
+.drill-badge {
+  font-size: 10px; font-family: var(--display); letter-spacing: 0.06em;
+  padding: 2px 7px; border-radius: 3px; flex-shrink: 0; white-space: nowrap;
+}
+.badge-beginner { background: rgba(34,197,94,0.15); color: #4ade80; }
+.badge-intermediate { background: rgba(251,191,36,0.15); color: #fbbf24; }
+.badge-advanced { background: rgba(239,68,68,0.15); color: #f87171; }
+.badge-bi { background: rgba(99,102,241,0.15); color: #a5b4fc; }
+.drill-name { font-size: 13.5px; color: #C8C7C2; flex: 1; }
+.drill-type { font-size: 11px; color: var(--mid); white-space: nowrap; }
+.drill-play { width: 20px; height: 20px; flex-shrink: 0; opacity: 0.5; }
+.drill-item:hover .drill-play { opacity: 1; }
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <img src="data:image/png;base64,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" alt="Ryde Hockey">
+    <span class="nav-brand-text">Coaches&rsquo; Playbook</span>
+  </div>
+  <div class="nav-links">
+    <a href="#s01">Framework</a>
+    <a href="#s02">Principles</a>
+    <a href="#s03">Your Role</a>
+    <a href="#s04">Thru-2-32</a>
+    <a href="#s05">Terminology</a>
+    <a href="#s06">Positions</a>
+    <a href="#s07">Tactics</a>
+    <a href="#s08">Training</a>
+    <a href="#s09">Game Day</a>
+    <a href="#s10">Top Tips</a>
+    <a href="#s11">Resources</a>
+    <a href="#s12">Videos</a>
+  </div>
+</nav>
+
+<!-- COVER -->
+<div class="cover" id="top">
+  <div style="margin-bottom:2rem">
+    <img src="data:image/png;base64,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" alt="Ryde Hunters Hill Hockey Club" style="width:90px;height:90px;filter:brightness(0) invert(1);opacity:0.95;display:block">
+  </div>
+  <div class="cover-eyebrow">Ryde Hunters Hill District Hockey Club</div>
+  <div class="cover-title">Coaches&rsquo;<br>Playbook</div>
+  <div class="cover-subtitle">Thru-2-32 Program</div>
+  <p class="cover-body">What you need to know to coach with confidence at Ryde.</p>
+  <div class="cover-toc">
+    <a href="#s01"><span class="toc-num">01</span> Framework</a>
+    <a href="#s02"><span class="toc-num">02</span> Principles</a>
+    <a href="#s03"><span class="toc-num">03</span> Your Role</a>
+    <a href="#s04"><span class="toc-num">04</span> Thru-2-32</a>
+    <a href="#s05"><span class="toc-num">05</span> Terminology</a>
+    <a href="#s06"><span class="toc-num">06</span> Positions</a>
+    <a href="#s07"><span class="toc-num">07</span> Tactics</a>
+    <a href="#s08"><span class="toc-num">08</span> Training</a>
+    <a href="#s09"><span class="toc-num">09</span> Game Day</a>
+    <a href="#s10"><span class="toc-num">10</span> Top Tips</a>
+    <a href="#s11"><span class="toc-num">11</span> Resources</a>
+    <a href="#s12"><span class="toc-num">12</span> Video Library</a>
+  </div>
+</div>
+
+<!-- 01 -->
+<div class="section-wrap"><section id="s01">
+  <div class="section-header">
+    <div class="section-num">01</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Our Coaching Framework</div>
+    </div>
+  </div>
+  <p class="body-text">The Club&rsquo;s junior coaching philosophy is set out in our coaching framework <strong>Play. Develop. Excel.</strong> This framework defines what we stand for, how we coach, and what success looks like when coaching junior athletes.</p>
+  <div class="callout accent">
+    <div class="callout-label">What success looks like at Ryde</div>
+    <p>Players who love hockey, keep improving, and come back year after year. When coaching junior athletes this takes priority over the scoreline.</p>
+  </div>
+  <div class="lead">Our core beliefs</div>
+  <div class="beliefs">
+    <div class="belief"><div class="belief-word">Play</div><p>Players who love the game train harder, stay longer and develop faster.</p></div>
+    <div class="belief"><div class="belief-word">Develop</div><p>Every player has the right to improve, regardless of ability or experience.</p></div>
+    <div class="belief"><div class="belief-word">Excel</div><p>Excellence means reaching your potential. That looks different for every player.</p></div>
+  </div>
+  <div class="callout">
+    <div class="callout-label">Remember</div>
+    <p>Winning is the outcome of a culture that develops players and keeps them engaged. Build that culture and results follow.</p>
+  </div>
+</section></div>
+
+<!-- 02 -->
+<div class="section-wrap"><section id="s02">
+  <div class="section-header">
+    <div class="section-num">02</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Key Principles</div>
+    </div>
+  </div>
+  <p class="body-text">There are five coaching principles that define how we coach at Ryde. They are not rules to follow &mdash; they are the standard we hold ourselves to and what we measure our success against.</p>
+  <ul class="item-list">
+    <li><span class="n">1.</span><span><strong>Development led.</strong> Core skills are the foundation of our coaching because structured skill development is how players improve.</span></li>
+    <li><span class="n">2.</span><span><strong>Equal opportunity.</strong> Players develop on the pitch, not on the bench. Every player gets meaningful pitch time and the chance to play across positions.</span></li>
+    <li><span class="n">3.</span><span><strong>Team based culture.</strong> We coach players to support each other, communicate positively, and compete for the team, not just themselves.</span></li>
+    <li><span class="n">4.</span><span><strong>Good sportsmanship.</strong> How players carry themselves is as important as how they play. Coaches role model the behaviour they expect to see.</span></li>
+    <li><span class="n">5.</span><span><strong>Celebrating success.</strong> Success is not just on the scoreboard. Continually acknowledging progress builds the culture that drives improvement.</span></li>
+  </ul>
+  <div class="callout">
+    <div class="callout-label">Applying the principles</div>
+    <p>In practice this means drilling the fundamentals, providing equal game time, building team culture, leading by example, and celebrating progress when we see it.</p>
+  </div>
+</section></div>
+
+<!-- 03 -->
+<div class="section-wrap"><section id="s03">
+  <div class="section-header">
+    <div class="section-num">03</div>
+    <div class="section-title-wrap">
+      <div class="section-title">The Role of Coach</div>
+    </div>
+  </div>
+  <p class="body-text">To be a good coach you don&rsquo;t need to be an expert. You need to be organised, encouraging, and consistent. The club&rsquo;s coaching program does the heavy lifting &mdash; your job is to deliver it in an environment where players feel safe to try, fail, and improve.</p>
+  <div class="lead">Key responsibilities</div>
+  <ul class="item-list">
+    <li><span class="n">1.</span><span>Follow the club&rsquo;s skills program and focus on the current module</span></li>
+    <li><span class="n">2.</span><span>Run structured training sessions using the club&rsquo;s session template</span></li>
+    <li><span class="n">3.</span><span>Give each player roughly equal game time and positional variety</span></li>
+    <li><span class="n">4.</span><span>Communicate clearly with players and parents</span></li>
+    <li><span class="n">5.</span><span>Model the behaviour you expect &mdash; respect, effort, sportsmanship</span></li>
+  </ul>
+  <div class="lead">Your first three weeks &mdash; checklist</div>
+  <ul class="checklist">
+    <li>Read the Junior Coaching Charter &amp; Playbook</li>
+    <li>Set expectations with players and parents</li>
+    <li>Learn every player&rsquo;s name</li>
+    <li>Watch at least 3 coaching videos on the club&rsquo;s YouTube channel</li>
+    <li>Connect with the other coaches in your age group</li>
+    <li>Confirm your training time, ground and game schedule</li>
+  </ul>
+</section></div>
+
+<!-- 04 -->
+<div class="section-wrap"><section id="s04">
+  <div class="section-header">
+    <div class="section-num">04</div>
+    <div class="section-title-wrap">
+      <div class="section-title">The Thru-2-32 Program</div>
+    </div>
+  </div>
+  <p class="body-text">The research is clear &mdash; players who build strong technical foundations early develop faster, perform better under pressure, and stay in the sport longer. With the Brisbane 2032 Olympic Games on the horizon, Ryde Hockey Club&rsquo;s Thru-2-32 program exists to give every Ryde player the best possible foundation for that journey, wherever it takes them in the sport.</p>
+  <div class="callout accent">
+    <div class="callout-label">The 4Cs model of skill development</div>
+    <p>The 4Cs &mdash; Collect, Carry, Connect, Contest &mdash; are the four essential skill areas of hockey that we want every Ryde player to develop. It is a model that our coaches deliver across the course of a season and flexes to different levels of ability as required.</p>
+  </div>
+  <div class="lead">Core skill areas</div>
+  <ul class="item-list">
+    <li><span class="n">&mdash;</span><span><strong>Collect:</strong> Securely gaining possession of the ball while in motion.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Carry:</strong> Maintaining control and advancing the ball whilst under pressure.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Connect:</strong> Accurate distribution of the ball to teammates.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Contest:</strong> Dispossessing opponents to win possession.</span></li>
+  </ul>
+  <div class="callout">
+    <div class="callout-label">Applying the 4Cs</div>
+    <p>The 4Cs apply to every player at every level &mdash; the difference is where each player is starting from and how far along the skill spectrum they are. A beginner works on collecting the ball cleanly. An advanced player works on collecting it under pressure. The skill is the same but the challenge is calibrated.</p>
+  </div>
+
+  <!-- 04.1 Collect -->
+  <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)">
+    <div class="section-header" style="margin-bottom:1rem">
+      <div class="section-num" style="font-size:2.5rem;color:#2A2A2A">04.1</div>
+      <div class="section-title-wrap" style="padding-top:0.5rem">
+        <div class="section-title" style="font-size:1.4rem">Collect</div>
+        <div class="section-sub">Securely gaining possession of the ball while in motion</div>
+      </div>
+    </div>
+    <p class="body-text">The ability to collect the ball cleanly &mdash; in motion, under pressure, on both sides of the body &mdash; is the foundation of everything that follows. A player who can&rsquo;t receive reliably can&rsquo;t carry, connect or contest effectively. This is where development starts.</p>
+    <div class="lead">Three key coaching points</div>
+    <div class="coaching-point"><div class="cp-num">1</div><div class="cp-text">Collection out in front of the body &mdash; not underneath or to the side. This gives the player strength, vision and options.</div></div>
+    <div class="coaching-point"><div class="cp-num">2</div><div class="cp-text">Collect in motion with feet offset &mdash; receive off both the left and right foot to stay mobile and balanced rather than stationary.</div></div>
+    <div class="coaching-point"><div class="cp-num">3</div><div class="cp-text">Receive facing forward where possible &mdash; using hook leads or drifting to receive. This promotes forward flow.</div></div>
+    <div class="mistake-cue">
+      <div class="mistake"><div class="mc-label">Common mistake</div><p>Player is stationary to receive the ball, making them easy to mark and slow to play on.</p></div>
+      <div class="cue"><div class="mc-label">Coaching cue</div><p>Keep feet moving. Collect the ball in motion. The ball finds you rather than you waiting for it.</p></div>
+    </div>
+    <div class="skill-areas"><div class="sa-label">Skill areas</div><p>Fore-stick receive &mdash; reverse-stick receive &mdash; receive across body &mdash; receive going forward &mdash; overhead receive &mdash; hook leads &mdash; post &amp; roll &mdash; receive to shoot &mdash; pre scanning &mdash; intercepting</p></div>
+  </div>
+
+<div class="video-section">
+  <details>
+    <summary>Coaching &amp; drill videos — Collect</summary>
+    <div class="drill-list">
+      <a href="http://www.youtube.com/watch?v=Dc1dMYhE-VQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of receiving</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=PMYcDNU8x8g" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Receiving on the move</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Mo4E1Ykbbgg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Leading</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=7wH5h0F49hk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Passing &amp; Receiving</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=5ijKrJQOL_M" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving going forward</span>
+        <span class="drill-type">Goal shooting drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=y_WJE1IqZJs" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Post &amp; Roll</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=7mq-ue92Dk8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Receiving with footwork</span>
+        <span class="drill-type">Warm up drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Q4uZDdDJZYU" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">3D ball control</span>
+        <span class="drill-type">Warm up drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=sYMmuHDx81s" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Drift &amp; Receive</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=XvzBZu88zNM" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Receiving on the reverse</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=a81DuELPpfg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Attacking patterns</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=INvUwkWh0UE" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving under pressure</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Hl-34xxwZbw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving at the next level</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </details>
+</div>
+
+
+  <!-- 04.2 Carry -->
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)">
+    <div class="section-header" style="margin-bottom:1rem">
+      <div class="section-num" style="font-size:2.5rem;color:#2A2A2A">04.2</div>
+      <div class="section-title-wrap" style="padding-top:0.5rem">
+        <div class="section-title" style="font-size:1.4rem">Carry</div>
+        <div class="section-sub">Maintaining control and advancing the ball whilst under pressure</div>
+      </div>
+    </div>
+    <p class="body-text">Carrying the ball with confidence under pressure is what separates players who create opportunities from those who simply pass and stand. A player who can carry engages defenders, creates overloads, and gives their team time and options.</p>
+    <div class="lead">Three key coaching points</div>
+    <div class="coaching-point"><div class="cp-num">1</div><div class="cp-text">Ball carry out in front at 1 o&rsquo;clock and 11 o&rsquo;clock &mdash; not to the side of the body. This creates the platform to move left, right or straight ahead with speed and vision.</div></div>
+    <div class="coaching-point"><div class="cp-num">2</div><div class="cp-text">Stick-on-ball at all times &mdash; especially when shifting between 1 and 11 o&rsquo;clock. Losing touch gives the defender the opportunity to tackle and limits passing options.</div></div>
+    <div class="coaching-point"><div class="cp-num">3</div><div class="cp-text">Engage the defender to create a 2v1 &mdash; using the 3-metre rule. Get close enough to commit the defender, but not too close. Then make the decision to carry or pass to eliminate.</div></div>
+    <div class="mistake-cue">
+      <div class="mistake"><div class="mc-label">Common mistake</div><p>Player carries the ball on the side or too close to the body, restricting vision and options.</p></div>
+      <div class="cue"><div class="mc-label">Coaching cue</div><p>Ball out in front in a strong carry position. Knees bent and back straight with options left and right.</p></div>
+    </div>
+    <div class="skill-areas"><div class="sa-label">Skill areas</div><p>1 o&rsquo;clock carry &mdash; 11 o&rsquo;clock carry &mdash; left to right drag &mdash; right to left drag &mdash; left-handed carry &mdash; 3D skills &mdash; V drag &mdash; 1v1 eliminations &mdash; 2v1 eliminations &mdash; 3v2 eliminations &mdash; stick and body feints</p></div>
+  </div>
+
+<div class="video-section">
+  <details>
+    <summary>Coaching &amp; drill videos — Carry</summary>
+    <div class="drill-list">
+      <a href="http://www.youtube.com/watch?v=bXWUrZbUfvY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of ball carry</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=AtkFQCsRR40" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Double drag elimination</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=E5U1gPbB5zQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of elimination</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=FOAa_KHZ5YY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Skill circuit</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=8itbnQC5jR0" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">V drag elimination</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=i_Q27dI0ZA4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Carry to eliminate</span>
+        <span class="drill-type">Drill / Technical</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=E5U1gPbB5zQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Basics of elimination</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Zjj-xz3zPb8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Left side carry</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=QyHM5X7voNA" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Spin</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=yVYBEgICvG4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">3D skills</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=H6MYKD-m6Lk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Attacking 3rd ball carry</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_uz8TaLL2hc" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">3v2 elimination</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=DXicpqSm1M0" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Carry with awareness</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=ojNLpNUozS4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Ball carry footwork</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HooJTTICN2Y" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Skill circuit</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </details>
+</div>
+
+
+  <!-- 04.3 Connect -->
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)">
+    <div class="section-header" style="margin-bottom:1rem">
+      <div class="section-num" style="font-size:2.5rem;color:#2A2A2A">04.3</div>
+      <div class="section-title-wrap" style="padding-top:0.5rem">
+        <div class="section-title" style="font-size:1.4rem">Connect</div>
+        <div class="section-sub">Accurate distribution of the ball to orchestrate team movements</div>
+      </div>
+    </div>
+    <p class="body-text">Connecting with support players &mdash; passing accurately and at the right moment &mdash; is what turns individual skill into team performance. A player who can connect keeps the ball moving, creates overloads, and relieves pressure. It&rsquo;s the skill that makes the whole team better.</p>
+    <div class="lead">Three key coaching points</div>
+    <div class="coaching-point"><div class="cp-num">1</div><div class="cp-text">Carry the ball in a position to maintain vision &mdash; 1 o&rsquo;clock and 11 o&rsquo;clock. A player whose head is down can&rsquo;t see the pass before they need to make it.</div></div>
+    <div class="coaching-point"><div class="cp-num">2</div><div class="cp-text">Stay down on the ball to execute the pass with accuracy. Not making square contact or coming up out of the pass too early is the most common cause of poor distribution.</div></div>
+    <div class="coaching-point"><div class="cp-num">3</div><div class="cp-text">Follow through with the body to generate power and direction. If the left shoulder is pointed in the direction of the pass, the ball is more likely to go there.</div></div>
+    <div class="mistake-cue">
+      <div class="mistake"><div class="mc-label">Common mistake</div><p>Player attempts to pass with the ball too close or too far from their body and fails to make a flat and accurate pass.</p></div>
+      <div class="cue"><div class="mc-label">Coaching cue</div><p>Square contact with the ball is essential for accurate hit, push or slap passes. This requires the right grip and the ball out in front of the left foot.</p></div>
+    </div>
+    <div class="skill-areas"><div class="sa-label">Skill areas</div><p>Stationary and mobile hit &mdash; push pass &mdash; slap pass &mdash; passing with disguise &mdash; overhead passes &mdash; wall pass &mdash; reverse edge pass &mdash; tomahawk &mdash; goal shooting &mdash; deflections &mdash; pre scanning</p></div>
+  </div>
+
+<div class="video-section">
+  <details>
+    <summary>Coaching &amp; drill videos — Connect</summary>
+    <div class="drill-list">
+      <a href="http://www.youtube.com/watch?v=bXWUrZbUfvY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of ball carry (carry position for passing)</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=VoP5JlMZEaU" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of hitting</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=grgpfeYLcMw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Hitting on the move</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_gs8UMtska4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of pushing</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=zQTiZsA9IoI" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Slap pass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Er9CV22bZZY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Overheads</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_uz8TaLL2hc" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Passing eliminations</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=2zJmZMRD3LY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Slider</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=m0uFs_mh36I" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Overhead lob</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=H6MYKD-m6Lk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Attacking overload</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Bd6lpqWKZac" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Reverse edge pass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=EipwEDS3U8o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Goal shooting</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=tqGu1GTHgsI" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Tomahawk</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=7wH5h0F49hk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Pass &amp; receive</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </details>
+</div>
+
+
+  <!-- 04.4 Contest -->
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)">
+    <div class="section-header" style="margin-bottom:1rem">
+      <div class="section-num" style="font-size:2.5rem;color:#2A2A2A">04.4</div>
+      <div class="section-title-wrap" style="padding-top:0.5rem">
+        <div class="section-title" style="font-size:1.4rem">Contest</div>
+        <div class="section-sub">Dispossessing opponents to protect the goal and initiate counter attacks</div>
+      </div>
+    </div>
+    <p class="body-text">Contesting for the ball isn&rsquo;t just about tackling. It&rsquo;s about positioning, timing, and applying pressure that forces errors. A team that contests well wins the ball back quickly, frustrates the opposition, and creates attacking opportunities in the transitions between defence and attack.</p>
+    <div class="lead">Three key coaching points</div>
+    <div class="coaching-point"><div class="cp-num">1</div><div class="cp-text">Engage the ball carrier on a 45-degree line. This controls where they can go and channels them toward the fore-stick, the sideline or a supporting defender.</div></div>
+    <div class="coaching-point"><div class="cp-num">2</div><div class="cp-text">Apply stick pressure (poke) to keep the ball carrier&rsquo;s head down. A player whose head is down can&rsquo;t see their support players or make good decisions.</div></div>
+    <div class="coaching-point"><div class="cp-num">3</div><div class="cp-text">Mark in-front in-touch (IFIT) &mdash; position between the ball and the player you&rsquo;re marking to create intercept opportunities and deny easy passes.</div></div>
+    <div class="mistake-cue">
+      <div class="mistake"><div class="mc-label">Common mistake</div><p>Player approaches the ball carrier front on with feet square, inviting the ball carrier to move either side.</p></div>
+      <div class="cue"><div class="mc-label">Coaching cue</div><p>Approach on a 45 degree angle with body turned and feet offset. Channel first, then tackle when the time is right. Stay in the contest.</p></div>
+    </div>
+    <div class="skill-areas"><div class="sa-label">Skill areas</div><p>Flat stick tackle &mdash; poke tackle &mdash; reverse stick tackle &mdash; channelling &mdash; reverse pressure &mdash; shave tackle &mdash; front marking (IFIT) &mdash; marking from behind &mdash; intercepting &mdash; defending in the circle &mdash; counter control</p></div>
+  </div>
+
+<div class="video-section">
+  <details>
+    <summary>Coaching &amp; drill videos — Contest</summary>
+    <div class="drill-list">
+      <a href="http://www.youtube.com/watch?v=lGfUxr-3OFw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Core skills: defence</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HFlBfncKn4o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of tackling</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=X5vExls-NYs" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of marking</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=VSt84uhCB5w" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Defensive pressure</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=d5T4bIR-sE4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Basics of goal keeping</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HFlBfncKn4o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Basics of tackling</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=r2uGRdoVJpg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Goal Keeper Masterclass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=O5W-zK1tptw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Tackling in the circle</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=R_qNEpjtNY8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">1v1 Engagement</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=-e6Pqmv7d_s" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Shave tackling</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=ppPUufCx1bw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">1v1 tackling box</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+    </div>
+  </details>
+</div>
+
+</section></div>
+
+<!-- 05 -->
+<div class="section-wrap"><section id="s05">
+  <div class="section-header">
+    <div class="section-num">05</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Terminology</div>
+      <div class="section-sub">Key terms every Ryde coach uses</div>
+    </div>
+  </div>
+  <div class="callout accent" style="margin-bottom:1.5rem">
+    <div class="callout-label">One club, one language</div>
+    <p>When every coach at Ryde uses the same terms, players build a shared vocabulary that makes them easier to coach, easier to move between teams, and faster to develop.</p>
+  </div>
+
+  <div class="term-group">
+    <div class="term-group-header">Playing zones</div>
+    <div class="term-row"><div class="term-label">Attacking third</div><div class="term-def">Opposition&rsquo;s 23m line to their goal. Where we score.</div></div>
+    <div class="term-row"><div class="term-label">Defensive third</div><div class="term-def">Our 23m line to our goal. Protect above everything else.</div></div>
+    <div class="term-row"><div class="term-label">Midfield</div><div class="term-def">Between the two 23m lines. Where possession is won and lost.</div></div>
+    <div class="term-row"><div class="term-label">T Spot</div><div class="term-def">Where the circle meets the baseline. Key circle entry point.</div></div>
+    <div class="term-row"><div class="term-label">Wide T</div><div class="term-def">Where the 23m line meets the sideline. Key attacking position.</div></div>
+    <div class="term-row"><div class="term-label">Penalty corner</div><div class="term-def">A set piece awarded for a foul inside the circle. PCA = attack, PCD = defence.</div></div>
+  </div>
+
+  <div class="term-group">
+    <div class="term-group-header">Tactical</div>
+    <div class="term-row"><div class="term-label">Outletting</div><div class="term-def">Moving the ball out of defence into attack. A structured pattern.</div></div>
+    <div class="term-row"><div class="term-label">Pressing</div><div class="term-def">Coordinated team pressure on the ball to win it back quickly.</div></div>
+    <div class="term-row"><div class="term-label">Counter attack</div><div class="term-def">Attack immediately after winning possession. Fast and direct.</div></div>
+    <div class="term-row"><div class="term-label">Counter control</div><div class="term-def">Win possession, slow it down. Reset shape rather than attack.</div></div>
+    <div class="term-row"><div class="term-label">Ball side</div><div class="term-def">The side of the pitch where the ball is. Congested.</div></div>
+    <div class="term-row"><div class="term-label">Help side</div><div class="term-def">The opposite side of the pitch from where the ball is. Space.</div></div>
+    <div class="term-row"><div class="term-label">Transfer</div><div class="term-def">Switching the ball from one side of the pitch to the other.</div></div>
+    <div class="term-row"><div class="term-label">3G</div><div class="term-def">Get &mdash; Give &mdash; Go. Receive, pass, move. The core possession principle.</div></div>
+  </div>
+
+  <div class="term-group">
+    <div class="term-group-header">Formations</div>
+    <div class="term-row"><div class="term-label">4-3-3</div><div class="term-def">Four defenders, three midfielders, three strikers. Balanced. Suits most age groups.</div></div>
+    <div class="term-row"><div class="term-label">3-4-3</div><div class="term-def">Three defenders, four midfielders, three strikers. More midfield presence.</div></div>
+  </div>
+</section></div>
+
+<!-- 06 -->
+<div class="section-wrap"><section id="s06">
+  <div class="section-header">
+    <div class="section-num">06</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Playing Positions</div>
+      <div class="section-sub">Roles and terminology we use</div>
+    </div>
+  </div>
+  <div class="positions-grid">
+    <div class="pitch-img">
+      <img src="data:image/png;base64,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" alt="4-3-3 formation diagram">
+      <div class="pitch-img-cap">4-3-3 basic structure</div>
+    </div>
+    <div class="pos-list">
+      <div class="pos-item"><div class="pos-name">Goal Keeper (GK)</div><div class="pos-desc">Last line of defence. Commands the circle and saves the savables.</div></div>
+      <div class="pos-item"><div class="pos-name">Central Defenders (CD)</div><div class="pos-desc">Anchors the defence and outlets from the back. One is a marker, the other is the &lsquo;free defender&rsquo;.</div></div>
+      <div class="pos-item"><div class="pos-name">Wide Defenders (WD)</div><div class="pos-desc">Marks opposing strikers and supports outletting. May overlap into midfield when attacking down their side.</div></div>
+      <div class="pos-item"><div class="pos-name">Defensive Midfield (DM)</div><div class="pos-desc">Controls the middle of the pitch. Key distributor in attack. Manages the defensive press.</div></div>
+      <div class="pos-item"><div class="pos-name">Attacking Midfield (AM)</div><div class="pos-desc">Links defence and attack. Marks the opposing AM. Must play higher than the DMs.</div></div>
+      <div class="pos-item"><div class="pos-name">Striker (STK)</div><div class="pos-desc">Positioned high in the attacking half. Responsible for outcomes in the circle and sets the tone in the defensive press.</div></div>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:1.5rem">
+    <div class="callout-label">Spacings between the lines</div>
+    <p>Defensive, midfield and striker lines must be spaced appropriately to provide layers in attack and defence. If lines become too flat it becomes more difficult to progress the ball and cover opposition counter attacks.</p>
+  </div>
+</section></div>
+
+<!-- 07 -->
+<div class="section-wrap"><section id="s07">
+  <div class="section-header">
+    <div class="section-num">07</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Tactical Principles</div>
+    </div>
+  </div>
+  <p class="body-text">These principles apply at every age group and every level. They give players and coaches a shared framework for how we want to play the game.</p>
+
+  <div class="phase-header"><span class="phase-tag">With the ball</span><span class="phase-title-text">Make the pitch as big as possible</span></div>
+  <ul class="item-list">
+    <li><span class="n">&mdash;</span><span><strong>Stretch vertically and laterally.</strong> Forwards push high, defenders hold their line, wide players hug the sidelines. Width and depth make the opposition&rsquo;s press harder to execute.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Maintain spacings between the lines.</strong> Defensive, midfield and striker lines must stay spread to give us layers. Flat teams are easy to press and hard to play through.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Play to the space, not the congestion.</strong> Move the ball to where the space is. If it&rsquo;s congested on the ball side, transfer to the help side.</span></li>
+  </ul>
+
+  <div class="phase-header" style="margin-top:1.5rem"><span class="phase-tag">Without the ball</span><span class="phase-title-text">Make the pitch as small as possible</span></div>
+  <ul class="item-list">
+    <li><span class="n">&mdash;</span><span><strong>Defend as a unit.</strong> The whole team compresses together. A press only works if everyone commits &mdash; one player out of position breaks the trap.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Force the ball into pockets.</strong> Channel the ball carrier toward the sideline or a congested area to isolate them and get numbers to the ball.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Deny, pressure, intercept.</strong> Once trapped, close down their options. Mark in front to deny easy passes, apply pressure to force errors, and look for intercepts to spark the counter.</span></li>
+  </ul>
+
+  <div class="phase-header" style="margin-top:1.5rem"><span class="phase-tag">Transitions</span><span class="phase-title-text">The moments that decide games</span></div>
+  <ul class="item-list">
+    <li><span class="n">&mdash;</span><span><strong>Win possession &mdash; counter attack fast.</strong> Strikers rush forward immediately to be an option ahead of the ball. Play direct and exploit the opposition before they recover their shape.</span></li>
+    <li><span class="n">&mdash;</span><span><strong>Lose possession &mdash; retreat and delay.</strong> Get goal-side immediately. Don&rsquo;t chase the ball &mdash; delay the opposition, force them wide, and give the team time to recover shape and protect the goalkeeper.</span></li>
+  </ul>
+
+  <div class="callout accent" style="margin-top:1.5rem">
+    <div class="callout-label">Keep it simple</div>
+    <p>With younger or less experienced players, start with the concept not the detail. &lsquo;Spread out&rsquo; and &lsquo;squeeze together&rsquo; are enough. The language becomes more precise as the understanding develops. As players become more experienced, you can move into anticipation, decision-making under pressure, and reading the game two moves ahead. The best tactic is the one your players can actually execute &mdash; start with what they can do and build complexity as their skills and understanding grow.</p>
+  </div>
+</section></div>
+
+<!-- 08 -->
+<div class="section-wrap"><section id="s08">
+  <div class="section-header">
+    <div class="section-num">08</div>
+    <div class="section-title-wrap">
+      <div class="section-title">How to Structure Training</div>
+      <div class="section-sub">The 75-minute session template</div>
+    </div>
+  </div>
+  <div class="session-table">
+    <div class="session-row"><div class="session-time">10 min</div><div class="session-desc">Warm up &mdash; dynamic, as an age group, mandatory. Start on time.</div></div>
+    <div class="session-row"><div class="session-time">20 min</div><div class="session-desc">Technical instruction &mdash; drill the core skill for this week&rsquo;s module.</div></div>
+    <div class="session-row"><div class="session-time">20 min</div><div class="session-desc">Designer game &mdash; competitive play with the essential skill built in.</div></div>
+    <div class="session-row"><div class="session-time">25 min</div><div class="session-desc">Coaches choice &mdash; game scenarios addressing gaps from the weekend.</div></div>
+  </div>
+  <div class="lead">The season program</div>
+  <ul class="item-list">
+    <li><span class="n">&mdash;</span><span><strong>April</strong> &mdash; Module 01: Collect</span></li>
+    <li><span class="n">&mdash;</span><span><strong>May</strong> &mdash; Module 02: Carry</span></li>
+    <li><span class="n">&mdash;</span><span><strong>June</strong> &mdash; Module 03: Connect</span></li>
+    <li><span class="n">&mdash;</span><span><strong>July</strong> &mdash; Module 04: Contest</span></li>
+    <li><span class="n">&mdash;</span><span><strong>August</strong> &mdash; Module 05: Finals prep</span></li>
+  </ul>
+  <div class="callout accent" style="margin-top:1.5rem">
+    <div class="callout-label">YouTube drill library</div>
+    <p>70+ coaching videos at <a href="https://youtube.com/user/coachingdirector" style="color:var(--green)">youtube.com/user/coachingdirector</a> &mdash; drills, key coaching points and technique guides for every module.</p>
+  </div>
+</section></div>
+
+<!-- 09 -->
+<div class="section-wrap"><section id="s09">
+  <div class="section-header">
+    <div class="section-num">09</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Managing Your Team</div>
+    </div>
+  </div>
+  <div class="lead">Managing rotations</div>
+  <p class="body-text">Use a simple substitution order and rotate every 4&ndash;5 minutes. Every player should get roughly equal time. Posting the order of subs in the dugout enables players to self-manage rotations.</p>
+  <div class="lead">Game day scenarios</div>
+  <div style="display:flex;flex-direction:column;gap:0.5rem;margin-top:0.75rem">
+    <div class="scenario"><div class="scenario-sit"><div class="sc-label">Situation</div><p>Winning heavily</p></div><div class="scenario-res"><div class="sc-label">Response</div><p>Rotate more frequently. Give less experienced players more time in key positions. Set a team challenge like &lsquo;how many passes before we shoot&rsquo;. Take the focus off the score.</p></div></div>
+    <div class="scenario"><div class="scenario-sit"><div class="sc-label">Situation</div><p>Losing heavily</p></div><div class="scenario-res"><div class="sc-label">Response</div><p>Regroup calmly. Pick one simple goal to focus on &mdash; such as limiting circle entries. Praise effort and celebrate the small wins. Keep rotations equal.</p></div></div>
+    <div class="scenario"><div class="scenario-sit"><div class="sc-label">Situation</div><p>A player is upset or disengaged</p></div><div class="scenario-res"><div class="sc-label">Response</div><p>Get them off the pitch briefly if needed. Speak privately and calmly. Focus on effort. Involve them in the next sub. Tell them what you need from them specifically.</p></div></div>
+    <div class="scenario"><div class="scenario-sit"><div class="sc-label">Situation</div><p>Managing parents</p></div><div class="scenario-res"><div class="sc-label">Response</div><p>Set expectations at the first training session about game time, positions, and approach. If a parent is difficult, discuss it after the game and escalate if necessary.</p></div></div>
+  </div>
+</section></div>
+
+<!-- 10 -->
+<div class="section-wrap"><section id="s10">
+  <div class="section-header">
+    <div class="section-num">10</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Top Tips</div>
+      <div class="section-sub">What we know works for coaches</div>
+    </div>
+  </div>
+  <div class="tip"><div class="tip-num">1</div><div class="tip-content"><div class="tip-title">Start and finish on time</div><div class="tip-body">Families plan around hockey. Respect their time and they&rsquo;ll do the same.</div></div></div>
+  <div class="tip"><div class="tip-num">2</div><div class="tip-content"><div class="tip-title">Use players&rsquo; names</div><div class="tip-body">Every time. It signals that you see them as individuals, not just numbers.</div></div></div>
+  <div class="tip"><div class="tip-num">3</div><div class="tip-content"><div class="tip-title">Focus on a small number of things</div><div class="tip-body">Pick the most important messages and repeat them until they land.</div></div></div>
+  <div class="tip"><div class="tip-num">4</div><div class="tip-content"><div class="tip-title">Let the game do the teaching</div><div class="tip-body">Designer games are a powerful development tool. Make time for them.</div></div></div>
+  <div class="tip"><div class="tip-num">5</div><div class="tip-content"><div class="tip-title">Celebrate the small stuff</div><div class="tip-body">A first clean receive. A good lead. Call it out loudly. It builds culture.</div></div></div>
+  <div class="tip"><div class="tip-num">6</div><div class="tip-content"><div class="tip-title">Don&rsquo;t over-coach during the game</div><div class="tip-body">Pick one or two things to focus on. Save the detail for training.</div></div></div>
+  <div class="tip"><div class="tip-num">7</div><div class="tip-content"><div class="tip-title">Ask questions, don&rsquo;t just give answers</div><div class="tip-body">Questioning is more powerful than telling. It builds thinking players.</div></div></div>
+  <div class="tip"><div class="tip-num">8</div><div class="tip-content"><div class="tip-title">Run a warm up every session</div><div class="tip-body">It sets the tone and signals to players that training has started.</div></div></div>
+  <div class="tip"><div class="tip-num">9</div><div class="tip-content"><div class="tip-title">Talk to the other coaches</div><div class="tip-body">The best ideas in this club come from coaches sharing what works.</div></div></div>
+  <div class="tip"><div class="tip-num">10</div><div class="tip-content"><div class="tip-title">You are the chief energy officer</div><div class="tip-body">Your energy is contagious. If you&rsquo;re having fun, they&rsquo;re having fun.</div></div></div>
+</section></div>
+
+<!-- 11 -->
+<div class="section-wrap"><section id="s11">
+  <div class="section-header">
+    <div class="section-num">11</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Resources and Support</div>
+      <div class="section-sub">Where to go when you need help</div>
+    </div>
+  </div>
+  <div class="resource-group">
+    <div class="lead">Coaching resources</div>
+    <ul class="item-list">
+      <li><span class="n">&mdash;</span><span>YouTube drill library: <a href="https://youtube.com/user/coachingdirector" style="color:var(--green)">youtube.com/user/coachingdirector</a></span></li>
+      <li><span class="n">&mdash;</span><span>Session guides: available from your age group coordinator</span></li>
+      <li><span class="n">&mdash;</span><span>Coaches Playbook: this document</span></li>
+      <li><span class="n">&mdash;</span><span>Ryde Coaches Hub on Facebook: <a href="https://www.facebook.com/groups/1871626926232635" style="color:var(--green)">facebook.com/groups/1871626926232635</a></span></li>
+    </ul>
+  </div>
+  <div class="resource-group">
+    <div class="lead">Key contacts</div>
+    <ul class="item-list">
+      <li><span class="n">&mdash;</span><span>Age Group Coordinator &mdash; for coaching questions and support</span></li>
+      <li><span class="n">&mdash;</span><span>Juniors Club President &mdash; for anything that needs to escalate</span></li>
+      <li><span class="n">&mdash;</span><span>Coaching Advisory Group &mdash; for ideas to improve the coaching program</span></li>
+    </ul>
+  </div>
+  <div class="resource-group">
+    <div class="lead">Key dates</div>
+    <ul class="item-list">
+      <li><span class="n">&mdash;</span><span>Coaches briefing &mdash; start of season</span></li>
+      <li><span class="n">&mdash;</span><span>Program checkpoint &mdash; mid season</span></li>
+      <li><span class="n">&mdash;</span><span>Finals prep &mdash; August</span></li>
+    </ul>
+  </div>
+  <div class="callout accent">
+    <div class="callout-label">Remember</div>
+    <p>You&rsquo;re not alone. Every coach at this club is a volunteer giving their time for the same reason &mdash; they love the game and want kids to love it too. Reach out. Share what works. We&rsquo;re better when we coach together.</p>
+  </div>
+</section></div>
+
+<div class="section-wrap"><section id="s12">
+  <div class="section-header">
+    <div class="section-num">12</div>
+    <div class="section-title-wrap">
+      <div class="section-title">Video Library</div>
+      <div class="section-sub">All coaching and drill videos by module</div>
+    </div>
+  </div>
+  <p class="body-text">All videos are hosted on the Ryde Hockey YouTube channel. Tap any drill to open it directly. Colour-coded by difficulty.</p>
+  <div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-bottom:1.5rem">
+    <span class="drill-badge badge-beginner" style="font-size:12px;padding:4px 10px">Beginner</span>
+    <span class="drill-badge badge-intermediate" style="font-size:12px;padding:4px 10px">Intermediate</span>
+    <span class="drill-badge badge-advanced" style="font-size:12px;padding:4px 10px">Advanced</span>
+    <span class="drill-badge badge-bi" style="font-size:12px;padding:4px 10px">Beg / Int</span>
+  </div>
+  
+  <div style="margin-bottom:2rem">
+    <div style="background:#1A5C4A;border-radius:6px;padding:0.6rem 1rem;margin-bottom:0.5rem">
+      <span style="font-family:var(--display);font-size:0.8rem;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase">Module 01</span>
+      <span style="font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;margin-left:0.75rem">Collect</span>
+    </div>
+    <div class="drill-list" style="border-radius:6px;border:1px solid var(--border)">
+      <a href="http://www.youtube.com/watch?v=Dc1dMYhE-VQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of receiving</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=PMYcDNU8x8g" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Receiving on the move</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Mo4E1Ykbbgg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Leading</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=7wH5h0F49hk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Passing &amp; Receiving</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=5ijKrJQOL_M" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving going forward</span>
+        <span class="drill-type">Goal shooting drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=y_WJE1IqZJs" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Post &amp; Roll</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=7mq-ue92Dk8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Receiving with footwork</span>
+        <span class="drill-type">Warm up drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Q4uZDdDJZYU" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">3D ball control</span>
+        <span class="drill-type">Warm up drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=sYMmuHDx81s" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Drift &amp; Receive</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=XvzBZu88zNM" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Receiving on the reverse</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=a81DuELPpfg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Attacking patterns</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=INvUwkWh0UE" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving under pressure</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Hl-34xxwZbw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Receiving at the next level</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:2rem">
+    <div style="background:#7A4E0D;border-radius:6px;padding:0.6rem 1rem;margin-bottom:0.5rem">
+      <span style="font-family:var(--display);font-size:0.8rem;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase">Module 02</span>
+      <span style="font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;margin-left:0.75rem">Carry</span>
+    </div>
+    <div class="drill-list" style="border-radius:6px;border:1px solid var(--border)">
+      <a href="http://www.youtube.com/watch?v=bXWUrZbUfvY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of ball carry</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=AtkFQCsRR40" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Double drag elimination</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=E5U1gPbB5zQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of elimination</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=FOAa_KHZ5YY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Skill circuit</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=8itbnQC5jR0" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">V drag elimination</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=i_Q27dI0ZA4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Carry to eliminate</span>
+        <span class="drill-type">Drill / Technical</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=E5U1gPbB5zQ" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Basics of elimination</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Zjj-xz3zPb8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Left side carry</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=QyHM5X7voNA" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Spin</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=yVYBEgICvG4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">3D skills</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=H6MYKD-m6Lk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Attacking 3rd ball carry</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_uz8TaLL2hc" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">3v2 elimination</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=DXicpqSm1M0" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Carry with awareness</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=ojNLpNUozS4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Ball carry footwork</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HooJTTICN2Y" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Skill circuit</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:2rem">
+    <div style="background:#2D1F7A;border-radius:6px;padding:0.6rem 1rem;margin-bottom:0.5rem">
+      <span style="font-family:var(--display);font-size:0.8rem;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase">Module 03</span>
+      <span style="font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;margin-left:0.75rem">Connect</span>
+    </div>
+    <div class="drill-list" style="border-radius:6px;border:1px solid var(--border)">
+      <a href="http://www.youtube.com/watch?v=bXWUrZbUfvY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of ball carry (carry position for passing)</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=VoP5JlMZEaU" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of hitting</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=grgpfeYLcMw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Hitting on the move</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_gs8UMtska4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of pushing</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=zQTiZsA9IoI" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Slap pass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Er9CV22bZZY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Overheads</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=_uz8TaLL2hc" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Passing eliminations</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=2zJmZMRD3LY" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Slider</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=m0uFs_mh36I" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Overhead lob</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=H6MYKD-m6Lk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Attacking overload</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=Bd6lpqWKZac" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Reverse edge pass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=EipwEDS3U8o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Goal shooting</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=tqGu1GTHgsI" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Tomahawk</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=7wH5h0F49hk" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Pass &amp; receive</span>
+        <span class="drill-type">Flow drill</span>
+      </a>
+    </div>
+  </div>
+  
+  <div style="margin-bottom:2rem">
+    <div style="background:#7A1A1A;border-radius:6px;padding:0.6rem 1rem;margin-bottom:0.5rem">
+      <span style="font-family:var(--display);font-size:0.8rem;color:rgba(255,255,255,0.55);letter-spacing:0.08em;text-transform:uppercase">Module 04</span>
+      <span style="font-family:var(--display);font-size:1.15rem;font-weight:600;color:#fff;margin-left:0.75rem">Contest</span>
+    </div>
+    <div class="drill-list" style="border-radius:6px;border:1px solid var(--border)">
+      <a href="http://www.youtube.com/watch?v=lGfUxr-3OFw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Core skills: defence</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HFlBfncKn4o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of tackling</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=X5vExls-NYs" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-name" style="font-weight:500">Basics of marking</span>
+        <span class="drill-type" style="color:var(--green)">Coaching point</span>
+      </a>
+      <div style="border-bottom:1px solid var(--border);margin:0.25rem 0"></div>
+      <a href="http://www.youtube.com/watch?v=VSt84uhCB5w" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Defensive pressure</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=d5T4bIR-sE4" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-bi">Beg/Int</span>
+        <span class="drill-name">Basics of goal keeping</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=HFlBfncKn4o" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-beginner">Beginner</span>
+        <span class="drill-name">Basics of tackling</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=r2uGRdoVJpg" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Goal Keeper Masterclass</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=O5W-zK1tptw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">Tackling in the circle</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=R_qNEpjtNY8" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-advanced">Advanced</span>
+        <span class="drill-name">1v1 Engagement</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=-e6Pqmv7d_s" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">Shave tackling</span>
+        <span class="drill-type">Technical instruction</span>
+      </a>
+      <a href="http://www.youtube.com/watch?v=ppPUufCx1bw" target="_blank" class="drill-item">
+        <svg class="drill-play" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#22C55E" stroke-width="1.5"/><path d="M10 8.5l5 3.5-5 3.5V8.5z" fill="#22C55E"/></svg>
+        <span class="drill-badge badge-intermediate">Intermediate</span>
+        <span class="drill-name">1v1 tackling box</span>
+        <span class="drill-type">Competitive drill</span>
+      </a>
+    </div>
+  </div>
+</section></div>
+<footer>
+  <p>Ryde Hunters Hill District Hockey Club &nbsp;<span>|</span>&nbsp; Coaches&rsquo; Playbook &mdash; Thru-2-32</p>
+</footer>
+
+<script>
+var NAV_H = document.querySelector('nav').offsetHeight + 16;
+
+document.querySelectorAll('.nav-links a').forEach(function(a) {
+  a.addEventListener('click', function(e) {
+    e.preventDefault();
+    var id = this.getAttribute('href').replace('#','');
+    var target = document.getElementById(id);
+    if (!target) return;
+    var top = target.getBoundingClientRect().top + window.pageYOffset - NAV_H;
+    window.scrollTo({top: top, behavior: 'smooth'});
+    document.querySelectorAll('.nav-links a').forEach(function(l){ l.classList.remove('active'); });
+    this.classList.add('active');
+    this.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+  });
+});
+
+window.addEventListener('scroll', function() {
+  var scrollY = window.pageYOffset;
+  document.querySelectorAll('section[id]').forEach(function(s) {
+    var top = s.offsetTop - NAV_H - 20;
+    var bottom = top + s.offsetHeight;
+    if (scrollY >= top && scrollY < bottom) {
+      document.querySelectorAll('.nav-links a').forEach(function(l){ l.classList.remove('active'); });
+      var active = document.querySelector('.nav-links a[href="#' + s.id + '"]');
+      if (active) {
+        active.classList.add('active');
+        active.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'});
+      }
+    }
+  });
+}, {passive: true});
+</script>
+</body>
+</html>
